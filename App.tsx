@@ -6,25 +6,18 @@
  */
 
 import React from 'react';
-// import {SafeAreaView} from 'react-native';
-import HomeScreen from './screens/HomeScreen';
-import AboutScreen from './screens/AboutScreen';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
-
-const Tab = createBottomTabNavigator();
+import 'react-native-gesture-handler';
+import MainStack from './src/utils/Stack';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import RNAsyncStorageFlipper from 'rn-async-storage-flipper';
+RNAsyncStorageFlipper(AsyncStorage as any);
+import {ActionSheetProvider} from '@expo/react-native-action-sheet';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaProvider>
-      <NavigationContainer>
-        <Tab.Navigator>
-          <Tab.Screen name="Home" component={HomeScreen} />
-          <Tab.Screen name="About" component={AboutScreen} />
-        </Tab.Navigator>
-      </NavigationContainer>
-    </SafeAreaProvider>
+    <ActionSheetProvider>
+      <MainStack />
+    </ActionSheetProvider>
   );
 }
 

@@ -14,6 +14,12 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-MyUniversity-MyUniversityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MyUniversity-MyUniversityTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BD3479D6F06F4265B6BDEDB1 /* RobotoMono-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC4928B5C484CA28E8F72 /* RobotoMono-VariableFont_wght.ttf */; };
+		3182E2953B1A4209AD647252 /* OpenSans-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E587BC11A9846F5ABF01858 /* OpenSans-VariableFont_wdth,wght.ttf */; };
+		18D5F5612C384266A3B09C7C /* PictureTitle.svg in Resources */ = {isa = PBXBuildFile; fileRef = FA675F33AF064093AA308A55 /* PictureTitle.svg */; };
+		F2B811E34B1148A386D709F9 /* PictureTitle2.svg in Resources */ = {isa = PBXBuildFile; fileRef = C8D1C9F0D2254728B541EC5E /* PictureTitle2.svg */; };
+		C249D8ABA42F48BE89A30EA3 /* sea.png in Resources */ = {isa = PBXBuildFile; fileRef = 71609CF685B24C5CBF0AD558 /* sea.png */; };
+		B68EC4B135424E85B5515053 /* seawhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 92B4B122575A4E479B3AB32E /* seawhite.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MyUniversity/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MyUniversity-MyUniversityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUniversity-MyUniversityTests.release.xcconfig"; path = "Target Support Files/Pods-MyUniversity-MyUniversityTests/Pods-MyUniversity-MyUniversityTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		06EFC4928B5C484CA28E8F72 /* RobotoMono-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "RobotoMono-VariableFont_wght.ttf"; path = "../assets/fonts/RobotoMono-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9E587BC11A9846F5ABF01858 /* OpenSans-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; name = "OpenSans-VariableFont_wdth,wght.ttf"; path = "../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FA675F33AF064093AA308A55 /* PictureTitle.svg */ = {isa = PBXFileReference; name = "PictureTitle.svg"; path = "../assets/imgs/PictureTitle.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C8D1C9F0D2254728B541EC5E /* PictureTitle2.svg */ = {isa = PBXFileReference; name = "PictureTitle2.svg"; path = "../assets/imgs/PictureTitle2.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		71609CF685B24C5CBF0AD558 /* sea.png */ = {isa = PBXFileReference; name = "sea.png"; path = "../assets/imgs/sea.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		92B4B122575A4E479B3AB32E /* seawhite.png */ = {isa = PBXFileReference; name = "seawhite.png"; path = "../assets/imgs/seawhite.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				1E6592533E1B48DDB3265758 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +160,20 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		1E6592533E1B48DDB3265758 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				06EFC4928B5C484CA28E8F72 /* RobotoMono-VariableFont_wght.ttf */,
+				9E587BC11A9846F5ABF01858 /* OpenSans-VariableFont_wdth,wght.ttf */,
+				FA675F33AF064093AA308A55 /* PictureTitle.svg */,
+				C8D1C9F0D2254728B541EC5E /* PictureTitle2.svg */,
+				71609CF685B24C5CBF0AD558 /* sea.png */,
+				92B4B122575A4E479B3AB32E /* seawhite.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +270,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BD3479D6F06F4265B6BDEDB1 /* RobotoMono-VariableFont_wght.ttf in Resources */,
+				3182E2953B1A4209AD647252 /* OpenSans-VariableFont_wdth,wght.ttf in Resources */,
+				18D5F5612C384266A3B09C7C /* PictureTitle.svg in Resources */,
+				F2B811E34B1148A386D709F9 /* PictureTitle2.svg in Resources */,
+				C249D8ABA42F48BE89A30EA3 /* sea.png in Resources */,
+				B68EC4B135424E85B5515053 /* seawhite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,10 +1,17 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
+import {Dimensions, StyleSheet, View, Text} from 'react-native';
+import {colors} from '../../colors';
+import MyButton from '../components/button';
 
 const AboutScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>this is About Screen !!!</Text>
+      <MyButton
+        color={colors.primary100}
+        rippleColor={colors.primary200}
+        type="noborder">
+        <Text>hello</Text>
+      </MyButton>
     </View>
   );
 };
@@ -16,6 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: Dimensions.get('window').height,
     width: Dimensions.get('window').width,
+    backgroundColor: colors.bg100,
   },
 });
 

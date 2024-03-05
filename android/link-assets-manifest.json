@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/OpenSans-VariableFont_wdth,wght.ttf",
+      "sha1": "ecdf1d58c0932a775c89b5ad48a7a0aaad66de4f"
+    },
+    {
+      "path": "assets/fonts/RobotoMono-VariableFont_wght.ttf",
+      "sha1": "db68e7694003b4a0f58c675b4131a8226a566f5c"
+    },
+    {
+      "path": "assets/imgs/PictureTitle.svg",
+      "sha1": "b746b9610016a679519548b551413060bffd672a"
+    },
+    {
+      "path": "assets/imgs/PictureTitle2.svg",
+      "sha1": "de6f7d488a4483b760878c320978a897f3a7cbee"
+    },
+    {
+      "path": "assets/imgs/sea.png",
+      "sha1": "00d3f832c1755b87b523cd80e06967e715115659"
+    },
+    {
+      "path": "assets/imgs/seawhite.png",
+      "sha1": "c6a98ea6c81bca7eacecb9250430aee3db8d5945"
+    }
+  ]
+}
