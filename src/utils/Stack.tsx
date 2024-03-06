@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TimeTableScreen from '../screens/TimeTableScreen';
 import HomeTabs from './HomeTabs';
 import {NavigationContainer} from '@react-navigation/native';
-import {Dimensions, StyleSheet} from 'react-native';
 import Orientation from 'react-native-orientation-locker';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const MainStack = () => {
   const [screenOrientation, setScreenOrientation] = useState<string>('');
@@ -34,24 +33,22 @@ const MainStack = () => {
           name="TimeTable"
           component={TimeTableScreen}
           options={{
-            headerStyle: styles.headerStyle,
+            // headerStyle: styles.headerStyle,
             headerShown: false,
+            navigationBarColor: 'rgba(0,0,0,0)',
           }}
         />
         <Stack.Screen
           name="TabNav"
           component={HomeTabs}
-          options={{title: 'My University'}}
+          options={{
+            title: 'My University',
+            navigationBarColor: '#f5f4f1',
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  headerStyle: {
-    height: Dimensions.get('window').height * 0.07,
-  },
-});
 
 export default MainStack;

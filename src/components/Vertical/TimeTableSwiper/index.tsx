@@ -33,15 +33,14 @@ const TimeTableSwiper: React.FC<TimeTableSwiperProps> = memo(
     const test = (event: any) => {
       const {contentOffset} = event.nativeEvent;
       const scrollX = contentOffset.x;
-      if (scrollX > prevScrollX.current) {
-        const nextDate = new Date(selectDate);
-        nextDate.setDate(selectDate.getDate() + 1);
-        setSelectDate(nextDate);
-      } else if (scrollX < prevScrollX.current) {
-        const nextDate = new Date(selectDate);
-        nextDate.setDate(selectDate.getDate() - 1);
-        setSelectDate(nextDate);
-      }
+      const nextDate = new Date(selectDate);
+      nextDate.setDate(
+        selectDate.getDate() -
+          Math.round(
+            (prevScrollX.current - scrollX) / Dimensions.get('window').width,
+          ),
+      );
+      setSelectDate(nextDate);
       prevScrollX.current = scrollX;
     };
     useEffect(() => {
@@ -77,8 +76,6 @@ const TimeTableSwiper: React.FC<TimeTableSwiperProps> = memo(
                 const weekStateNoSpace = item.weekState.replace(/\s/g, '');
                 const startWeek = parseInt(item.courseWeek.split('-')[0]);
                 const endWeek = parseInt(item.courseWeek.split('-')[1]);
-                // console.log(startWeek, endWeek);
-
                 // Check both conditions
                 return (
                   weekStateNoSpace !== '单' &&
@@ -91,8 +88,6 @@ const TimeTableSwiper: React.FC<TimeTableSwiperProps> = memo(
                 const weekStateNoSpace = item.weekState.replace(/\s/g, '');
                 const startWeek = parseInt(item.courseWeek.split('-')[0]);
                 const endWeek = parseInt(item.courseWeek.split('-')[1]);
-                // console.log(startWeek, endWeek);
-
                 // Check both conditions
                 return (
                   weekStateNoSpace !== '单' &&
@@ -105,7 +100,7 @@ const TimeTableSwiper: React.FC<TimeTableSwiperProps> = memo(
             if (row.length === 0) {
               return (
                 <>
-                  <View style={styles.restContainer}>
+                  <View style={styles.restContainer} key={`noClass${i}`}>
                     <Text style={styles.restText}>
                       There are no classes today. Let's have a rest!!!
                     </Text>
@@ -120,7 +115,7 @@ const TimeTableSwiper: React.FC<TimeTableSwiperProps> = memo(
             } else {
               return (
                 <FlatList
-                  key={i}
+                  key={`class${i}`}
                   data={newRow}
                   renderItem={({item, index}) => (
                     <TimeTableItem item={item} index={index} />
