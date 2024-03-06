@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
     paddingLeft: Dimensions.get('window').width * 0.05,
     paddingTop: Dimensions.get('window').height * 0.01,
     width: Dimensions.get('window').width,
-    backgroundColor: colors.bg200,
+    backgroundColor: colors.bg300,
   },
   titleImg: {
     position: 'absolute',
@@ -286,7 +286,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#9ad5f3',
     padding: 30,
     width: Dimensions.get('window').width,
-    elevation: 10,
     height: 100,
     display: 'flex',
     justifyContent: 'center',
@@ -311,7 +310,6 @@ const styles = StyleSheet.create({
   divider: {
     height: 2,
     width: Dimensions.get('window').width,
-    elevation: 10,
     backgroundColor: '#f1f1f1',
   },
   messageItem: {
